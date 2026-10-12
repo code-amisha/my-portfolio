@@ -9,6 +9,8 @@
     gap :30px;
 }
 
+/* This is my home section */
+
 #home {
     min-height: 100vh;
     display: flex;
@@ -17,6 +19,8 @@
     align-items: center;
     text-align: center;
 }
+
+/* This is my about section */
 
 #about {
     display: flex;
@@ -41,6 +45,7 @@
     object-fit: cover;
 }
 
+/* This is my skills section */
 
 #skills{
     align-items: center;
@@ -69,6 +74,8 @@
     padding-left:15px;
 }
 
+/* This is my project section */
+
 #projects{
     align-items: center;
     padding: 80px 40px;
@@ -88,6 +95,96 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+#education {
+    padding: 80px 40px;
+}
+
+.education-container {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.education-container::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #c4b5fd;
+}
+
+.education-item {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.education-item::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 40px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #7c3aed;
+}
+
+.education-item h2 {
+    margin-top: 0;
+}
+
+.education-item h3 {
+    margin-bottom: 10px;
+}
+
+.education-year {
+    font-weight: bold;
+}
+
+.education-grade {
+    color: #6b7280;
+}
+
+#contact {
+    padding: 80px 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    margin-top: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form {
+    margin-right: 20px;
+}
 
 
 
