@@ -73,6 +73,44 @@ nav h3 .highlight{
     margin-top: 10px;
     margin-bottom: 0;
 }
+.skills-line {
+    color: #001166;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin-top: 15px;
+}
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.home-buttons button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #001166;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-buttons button:first-child {
+    background-color: #001166;
+    color: #fdf9f2;
+}
+.home-buttons button:first-child:hover{
+    background-color: #172580;
+}
+.home-buttons button:last-child {
+    background-color: transparent;
+    color: #001166;
+}
+.home-buttons button:hover {
+    transform: translateY(-3px);
+}
+
 
 
 /* This is my about section */
