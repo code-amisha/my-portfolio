@@ -133,16 +133,18 @@ nav h3 .highlight{
 #myimg h2 {
     color: #001166;
     font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
     margin: 0 0 30px;
 }
 
 .about-text {
     width: 60%;
     font-size: 18px;
-    margin-top:20px;
+    margin-top:25px;
+    line-height: 1.7;
+    color:  #333b59;
 }
-
-
 #myimg img {
     display: block;
     width: 350px;
@@ -186,29 +188,71 @@ nav h3 .highlight{
 
 #skills{
     align-items: center;
-    padding: 80px 40px;
+    padding: 25px 40px 60px;
+    overflow: hidden;
 
+}
+
+#skills h2{
+    color: #001166;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 30px;
+}
+
+.skill-slider {
+    display: flex;
+    width: max-content;
+    animation: skills-scroll 25s linear infinite;
 }
 
 .skill-container{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-shrink: 0;
+    gap: 25px;
+    padding-right: 25px;
 }
 
 .skill {
     display: inline-block;
     margin: 5px;
-    background-color: #ffffff;
+    background-color: #cb9d9d;
     border-radius:10px;
     padding:7px;
 }
 
+.skill-category h3 {
+    font-size: 20px;
+    color: #001166;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .skill-category{
-    background-color: rgb(231, 209, 221);
-    padding:5px;
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color:#F0F3FF;
+    color: #001166;
+    padding:20px;
     border-radius: 5px;
     padding-left:15px;
+}
+
+@keyframes skills-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.skill-slider:hover {
+    animation-play-state: paused;
 }
 
 /* This is my project section */
