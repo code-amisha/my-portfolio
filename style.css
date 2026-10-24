@@ -215,21 +215,39 @@ nav h3 .highlight{
 }
 
 .skill {
-    display: inline-block;
-    margin: 5px;
-    background-color: #cb9d9d;
-    border-radius:10px;
-    padding:7px;
+    background: #FFFFFF;
+    color: #001166;
+    padding: 8px 14px;
+    margin: 5px 3px;
+    border: 1px solid #D6DEFF;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    background: #001166;
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 17, 102, 0.15);
 }
 
 .skill-category h3 {
+    grid-column: 1 / -1;
     font-size: 20px;
+    font-weight: 700;
     color: #001166;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .skill-category{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    gap: 10px;
     width: 250px;
     height: 250px;
     flex-shrink: 0;
