@@ -277,22 +277,109 @@ nav h3 .highlight{
 
 #projects{
     align-items: center;
-    padding: 80px 40px;
+    padding: 25px 40px 60px;
 }
+
+#projects h2 {
+    color: #001166;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 30px;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px 40px;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     padding: 25px;
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 17, 102, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
 }
+
+.project-card .tech-stack{
+    margin-top: auto;
+    padding-top: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #9DB8FF;
+    box-shadow: 0 10px 25px rgba(0, 17, 102, 0.10);
+}
+
+.project-card h3 {
+    color: #001166;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-card strong {
+    color: #001166;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top:auto;
+    padding-top: 20px;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    background-color: #001166;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #001166;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #9DB8FF;
+    color: #001166;
+    border-color: #9DB8FF;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 650px) {
+    #projects {
+        padding: 60px 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 
 #education {
     padding: 80px 40px;
